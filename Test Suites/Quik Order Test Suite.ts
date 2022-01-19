@@ -15,7 +15,7 @@
       <guid>ba75300e-6a07-477d-9432-57b957059e62</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Quick Order Scenario/TC01_VerifyHeaderAndTitleOfCurrentPage</testCaseId>
+      <testCaseId>Test Cases/Quick Order Scenario/TC01_VerifyUrlAndTitleOfCurrentPage</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>f35986be-712b-429b-bfc2-9b82be336b5d</guid>
@@ -27,6 +27,6 @@
       <guid>ddef70d1-9663-448b-ae1f-be4c085a836b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Quick Order Scenario/TC_03_VerifyPageSubHeading</testCaseId>
+      <testCaseId>Test Cases/Quick Order Scenario/TC03_VerifyPageSubHeading</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

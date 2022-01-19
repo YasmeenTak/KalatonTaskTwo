@@ -19,4 +19,9 @@
       <initValue>'Quick and easy ordering! Simply enter the stock number and the quantities you wish to order, then click button to ADD TO CART.'</initValue>
       <name>subHeadingText</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'fserf'</initValue>
+      <name>invalidText</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
