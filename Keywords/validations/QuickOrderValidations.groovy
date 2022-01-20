@@ -7,25 +7,13 @@ import org.openqa.selenium.WebElement
 
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import org.openqa.selenium.WebDriver
-import org.openqa.selenium.interactions.Actions
-import org.openqa.selenium.support.ui.WebDriverWait
-import org.testng.Assert
 
-import com.kms.katalon.core.annotation.Keyword
-import com.kms.katalon.core.checkpoint.Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.model.FailureHandling
-import com.kms.katalon.core.testcase.TestCase
-import com.kms.katalon.core.testdata.TestData
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.driver.DriverFactory
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Wind
+import actions.QuickOrderActions
+import helpers.QuickOrderHelpers
 import internal.GlobalVariable
 
 public class QuickOrderValidations {
-
+	public static final String[] TableHeader= ["Stock #" , "Qty." , "Item", "", "Price", "Total", ""]
 	/***
 	 * Verify Stock Input Placeholder
 	 * @author Yasmeen
@@ -177,15 +165,15 @@ public class QuickOrderValidations {
 	 */
 	public static void verifyTotalPriceForProduct() {
 		List<WebElement> products = WebUI.findWebElements(findTestObject("Object Repository/QuikOrderPage/TableContent/tr_producTableRows"),2)
-			WebElement quantityElm = products.get(0).findElement(By.cssSelector(".product-table__quantity input"))
-			double quantity = Double.parseDouble(quantityElm.getAttribute("value").replace('$', ''))
+		WebElement quantityElm = products.get(0).findElement(By.cssSelector(".product-table__quantity input"))
+		double quantity = Double.parseDouble(quantityElm.getAttribute("value").replace('$', ''))
 
-			WebElement priceElm = products.get(0).findElement(By.cssSelector(".price-holder"))
-			double price = Double.parseDouble(priceElm.getText().replace('$', ''))
+		WebElement priceElm = products.get(0).findElement(By.cssSelector(".price-holder"))
+		double price = Double.parseDouble(priceElm.getText().replace('$', ''))
 
-			WebElement totalElm = products.get(0).findElement(By.cssSelector(".product-table__total.hidden-sm span"))
-			double total = Double.parseDouble(totalElm.getText().replace('$', '').replace(',', ''))
-			assert total == Double.parseDouble(String.format("%.2f", price*quantity))
+		WebElement totalElm = products.get(0).findElement(By.cssSelector(".product-table__total.hidden-sm span"))
+		double total = Double.parseDouble(totalElm.getText().replace('$', '').replace(',', ''))
+		assert total == Double.parseDouble(String.format("%.2f", price*quantity))
 	}
 
 	/***
@@ -196,4 +184,34 @@ public class QuickOrderValidations {
 		TestObject addToCartButton = findTestObject("Object Repository/QuikOrderPage/Buttons Section/button_addToCart")
 		assert WebUI.getCSSValue(addToCartButton, "box-shadow").equals("rgba(0, 0, 0, 0.3) 0px 0px 10px 2px")
 	}
-}
+	/***
+	 * verify verify Cart Counter And Style
+	 * @author Yasmeen
+	 */
+	public static void verifyCartCounterAndStyle(String itemNumber) {
+		TestObject cartSpan = findTestObject("Object Repository/QuikOrderPage/Mini Cart/span_cartCounter")
+		assert WebUI.getText(cartSpan).equals(itemNumber)
+		assert WebUI.getCSSValue(cartSpan, "color").equals("rgba(255, 255, 255, 1)")
+	}
+	public static void verifyCartTotal(String first, String sec, String third, String fourth,String fifth) {
+		double expectedTotal = QuickOrderHelpers.calculateQuickOrdersTotal(first, sec, third, fourth, fifth)
+		double actualTotal = QuickOrderActions.formatPriceAndTotal(WebUI.getText(findTestObject("Object Repository/Quick Order/span_cartLabel")))
+		assert expectedTotal == actualTotal
+	}
+	public static void verifyProductsNoInCart(int expectedNo, int realNo) {
+		assert expectedNo == realNo
+	}
+
+	/***
+	 * verifyProductsTableHead
+	 */
+	public static void verifyProductsTableHeadNumbersAndTitle() {
+		TestObject headTable = findTestObject("Object Repository/QuikOrderPage/TableContent/th_TableHeader")
+		
+//		List<WebElement> quickOrders = WebUI.findWebElements(headTable, GlobalVariable.elementsVisibiltyTimeOut)
+//		for(int i = 0 ; i < quickOrders.size() ; i++) {
+//			String text = quickOrders.get(i).getText();
+//			TableHeader[i].equals(text)
+		}
+	}
+

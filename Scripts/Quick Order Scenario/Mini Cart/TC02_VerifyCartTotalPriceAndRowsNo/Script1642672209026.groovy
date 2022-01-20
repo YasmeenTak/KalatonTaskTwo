@@ -1,0 +1,3 @@
+import helpers.QuickOrderHelpers
+
+QuickOrderHelpers.verifyCartTotalPriceAndRowsNo(1)

@@ -113,7 +113,7 @@ public class QuickOrderActions {
 		WebUI.sendKeys(firstQuantity, Keys.chord(Keys.BACK_SPACE))
 		WebUI.setText(firstQuantity, quantity)
 		WebUI.sendKeys(firstQuantity, Keys.chord(Keys.TAB))
-		
+
 		return firstQuantity
 	}
 
@@ -177,13 +177,17 @@ public class QuickOrderActions {
 		WebElement addToCartButtonElm = WebUI.findWebElement(addToCartButton)
 		WebUI.mouseOver(addToCartButton)
 	}
+	
 
 	/***
 	 * click on add to cart button
 	 * @author Yasmeen
 	 */
 	public static void clickOnAddToCartButton() {
-		TestObject addToCartButton = findTestObject("Object Repository/QuickOrderPage/button_addToCart")
+		TestObject addToCartButton = findTestObject("Object Repository/QuikOrderPage/Buttons Section/button_addToCart")
 		WebUI.click(addToCartButton)
+	}
+	public static double formatPriceAndTotal(String elm){
+		return Double.parseDouble(elm.replace('$', '').replace(',', ''))
 	}
 }

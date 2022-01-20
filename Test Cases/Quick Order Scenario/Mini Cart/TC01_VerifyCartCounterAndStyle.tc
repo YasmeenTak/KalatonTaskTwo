@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01_VerifyCartCounterAndStyle</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d86f4c2b-937e-4d30-a2d4-fd26f46de8db</testCaseGuid>
+</TestCaseEntity>
