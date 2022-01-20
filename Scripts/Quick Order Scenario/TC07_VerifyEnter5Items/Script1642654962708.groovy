@@ -14,9 +14,13 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable
-import validations.QuickOrderValidations
 
+import actions.QuickOrderActions
+import helpers.QuickOrderHelpers
+import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-QuickOrderValidations.verifyStockInputPlaceholder()
+//WebUI.refresh()
+//QuickOrderHelpers.fisrt()
+//QuickOrderHelpers.enterQuickOrderProducts()
+QuickOrderHelpers.enterQuickOrderProducts()

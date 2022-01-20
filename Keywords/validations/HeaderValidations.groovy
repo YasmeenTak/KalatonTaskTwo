@@ -24,8 +24,7 @@ public class HeaderValidations {
 		String actualHeading2 ="ORDER"
 		Assert.assertTrue(expectedHeading.contains(actualHeading1))
 		Assert.assertTrue(expectedHeading.contains(actualHeading2))
-		
-		
+
 		assert WebUI.getCSSValue(quickHeader, "background-color").equals("rgba(82, 36, 127, 1)")
 		assert WebUI.getCSSValue(quickHeader, "color").equals("rgba(255, 255, 255, 1)")
 		TestObject quickIcon = findTestObject('Object Repository/QuikOrderPage/Heading/span_quickOrderIcon')

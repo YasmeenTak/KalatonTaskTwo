@@ -1,0 +1,3 @@
+import validations.QuickOrderValidations
+
+QuickOrderValidations.verifyHoveringOverAddToCartButton()

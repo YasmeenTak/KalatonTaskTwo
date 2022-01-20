@@ -21,4 +21,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class GlobalActions {
+	public static void hoverItem(TestObject item) {
+		WebUI.mouseOver(item)
+	}
+	public static void focusItem(TestObject item) {
+		WebUI.focus(item)
+	}
+	public static void clearItem(TestObject item) {
+		WebUI.clearText(item)
+	}
 }

@@ -19,4 +19,4 @@ import validations.QuickOrderValidations
 
 import org.openqa.selenium.Keys as Keys
 
-QuickOrderValidations.verifyStockInputPlaceholder()
+QuickOrderValidations.verifyErrorMessageDisplay()

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC0_VerifyClickOnAddToCartBtn</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a602935a-310d-48f8-8901-ccf8962b606a</testCaseGuid>
+</TestCaseEntity>

@@ -24,4 +24,164 @@
       <initValue>'fserf'</initValue>
       <name>invalidText</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Enter Stock #'</initValue>
+      <name>stockInputPlaceholder</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'PRT381'</initValue>
+      <name>firstStockNo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'GTDCA700C'</initValue>
+      <name>secStockNo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'PP30'</initValue>
+      <name>thirdStockNo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ZB400'</initValue>
+      <name>fourthStockNo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'SP4005'</initValue>
+      <name>fifthStockNo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'BR1 '</initValue>
+      <name>productId1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'BR1 '</initValue>
+      <name>productId1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Wall Mount Counter Bag Rack'</initValue>
+      <name>productName1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'$19.79'</initValue>
+      <name>productPrice1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/4adafc/globalassets/catalogs/br1_/br1_pare/br1_parent/br1-1-main-br1_parent.jpg?width=80&amp;height=80&amp;quality=85&amp;mode=crop'</initValue>
+      <name>productImage1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'SDT1BL '</initValue>
+      <name>productId2</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Stripe Day Tags - 1 3/8&quot; x 1 7/8&quot; - 1,000/Box - Blue'</initValue>
+      <name>productName2</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'$2.99'</initValue>
+      <name>productPrice2</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/4ad831/globalassets/catalogs/dt1s/sdt1bl-1-main-dt1s.jpg?width=80&amp;height=80&amp;quality=85&amp;mode=crop'</initValue>
+      <name>productImage2</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'DONCIRCLE '</initValue>
+      <name>productId3</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Tailwind #00-99 &quot;Circle&quot; Roll Lot Shirt Tags - 10,000/Box - Multi-Color'</initValue>
+      <name>productName3</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'$49.95'</initValue>
+      <name>productPrice3</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/4ad891/globalassets/catalogs/donc/doncircl/doncircle/DONCIRCLE-1-Main-0.jpg?width=80&amp;height=80&amp;quality=85&amp;mode=crop'</initValue>
+      <name>productImage3</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'HS101AQM '</initValue>
+      <name>productId4</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Wrights 100% Polyester Satin Blanket Binding - 4 3/4 yds. x 2&quot; - Aquamarine'</initValue>
+      <name>productName4</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'$4.45'</initValue>
+      <name>productPrice4</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/4ae2da/globalassets/catalogs/hs10/hs101/hs101aqm-1-main-hs101.jpg?width=80&amp;height=80&amp;quality=85&amp;mode=crop'</initValue>
+      <name>productImage4</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'BH16 '</initValue>
+      <name>productId5</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Hog Hair Bristle Spotting Brush - 9&quot; x 1&quot; x 2 3/8&quot; Head'</initValue>
+      <name>productName5</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'$6.50'</initValue>
+      <name>productPrice5</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/4ad8a0/globalassets/catalogs/bh16/bh16_par/bh16_parent/bh16-1-main-bh16_parent.jpg?width=80&amp;height=80&amp;quality=85&amp;mode=crop'</initValue>
+      <name>productImage5</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>productQuantity1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>productQuantity2</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>productQuantity3</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>productQuantity4</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>productQuantity5</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
